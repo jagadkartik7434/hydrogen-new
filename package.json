@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "build": "npx shopify hydrogen build --codegen",
-    "dev": "shopify hydrogen dev --codegen",
-    "preview": "shopify hydrogen preview --build",
+    "dev": "npx shopify hydrogen dev --codegen",
+    "preview": "npx shopify hydrogen preview --build",
     "lint": "eslint --no-error-on-unmatched-pattern .",
-    "codegen": "shopify hydrogen codegen && react-router typegen"
+    "codegen": "npx shopify hydrogen codegen && react-router typegen"
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
