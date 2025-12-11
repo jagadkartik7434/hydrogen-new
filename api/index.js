@@ -2,9 +2,9 @@ import server from '../dist/server/index.js';
 
 const handler = server?.default ?? server;
 
-// Use Node serverless runtime (Edge bundle pulls in unsupported modules).
+// Use Vercel Node serverless runtime (Edge bundle pulls in unsupported modules).
 export const config = {
-  runtime: 'nodejs20.x',
+  runtime: 'nodejs',
 };
 
 export default async function vercelNodeHandler(req, res) {
